@@ -11,6 +11,5 @@ function solution(s)
             // 빼
         }
     }
-
     return stack.length ? 0: 1;
 }
