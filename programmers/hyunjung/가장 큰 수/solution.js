@@ -11,6 +11,10 @@ function solution(numbers) {
     return parseInt(b + a) - parseInt(a + b)
   }).join('');
 
+  //method chaining
+  //const result = numbers.map(cur => String(cur)).sort((a,b) => parseInt(b+a)-parseInt(a+b)).join('');
+
+
   //배열 원소가 모두 0일 경우, 예외처리
   //문자열[0] --> 문자열의 제일 첫번째 문자가 반환됨
   return result[0] === '0' ? '0' : result;
