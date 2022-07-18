@@ -5,7 +5,6 @@ function solution(maps) {
     let isVisited = Array.from(Array(maps.length), () =>
         Array(maps[0].length).fill(false)
     );
-
     const dr = [-1, 1, 0, 0];
     const dc = [0, 0, -1, 1];
     queue.push([0, 0, 1]);
