@@ -1,0 +1,15 @@
+// 1번 테케 => 0.08
+
+function solution(clothes) {
+  var answer = 1;
+  var closet = new Map();
+  clothes.forEach(cloth => 
+                  closet.has(cloth[1]) ? 
+                  closet.set(cloth[1],closet.get(cloth[1])+1)
+                  : closet.set(cloth[1], 1));
+  var types = [...closet.keys()]
+  for (var i = 0; i < types.length; i++) {
+      answer *= closet.get(types[i]) + 1;
+  }
+  return answer-1
+}
